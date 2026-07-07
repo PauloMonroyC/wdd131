@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    height: 100vh;
+    grid-template:auto 1fr auto  auto / 3fr 1fr;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    
+}
+
+header {
+    background-color: #1D4D72;
+    grid-column: 1/4;
+    text-align: center;
+   
+}
+
+
+span { 
+    display: block;
+    color: #FFFFFF;
+    grid-column: 1/4;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+
+}
+
+
+nav {
+    grid-column: 1/4;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333333;
+    align-items: center;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: #FFFFFF;
+    padding: 0.80rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+    
