@@ -162,10 +162,11 @@ main {
     border-top-right-radius: 10px;
 }
 
-#side nav {
+#side ul {
     flex: 1;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
     font-size: 19px;
 }
 
