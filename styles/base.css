@@ -25,6 +25,15 @@ header {
     -webkit-text-stroke: 0.2px #979797;
 }
 
+nav a:hover {
+    color:#0a0a0a;
+    text-decoration: underline;
+    background-color: #edd596;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .navigation {
     list-style: none;
     display: flex;
@@ -37,7 +46,7 @@ header {
     flex: auto;
 }
 
-.navigation a {
+.navigation a{
     display: block;
     color: #FFFFFF;
     padding: 0.80rem;
