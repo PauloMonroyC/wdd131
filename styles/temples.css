@@ -33,6 +33,24 @@ header, main {
     margin: 0 auto;
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
 nav {
     background: #4a7751;
     box-shadow: 0 0 10px #4a7751;
@@ -90,6 +108,29 @@ figcaption {
     font-size: smaller;
 }
 
+footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #85AB6C;
+    color: #fff;
+    font-size: larger;
+    text-align: center;
+
+}
+
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.open a {
+    display: block;
+}
 
 
 
