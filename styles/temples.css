@@ -21,12 +21,12 @@ h1 {
 /* mobile version*/
 
 header {
-    background: #85ab6c;
+    background: #739A58;
     display: grid;
     grid-gap: 1rem;
     padding: 20px;
-    border: 1px solid #85ab6c;
-    box-shadow: 0 0 1px #85ab6c;
+    border: 1px solid #739A58;
+    box-shadow: 0 0 1px #739A58;
 }
 
 header, main {
@@ -112,7 +112,7 @@ footer {
     margin-top: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: #85AB6C;
+    background: #739A58;
     color: #fff;
     font-size: larger;
     text-align: center;
