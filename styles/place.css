@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Gabarito";
+    font-weight: 100;
+}
+
+h1 {
+    display: block;
+    background: #8fc44c;
+    color: #332817;
+    border-bottom: 8px solid #6aac52;
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.hero img {
+    border-bottom: 5px solid #6aac52;
+}
+
+.data h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding-bottom: 15px;
+    border-bottom: 0.1px solid #b8e4a8;
+    font-size: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 140px 160px;
+    column-gap: 8px;
+    row-gap: 10px;
+    justify-content: center;
+    padding-left: 60px;
+}
+
+.etiqueta {
+    text-align: right;
+    font-weight: 550;
+}
+
+.valor {
+    text-align: left;
+}
+
+.weather h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #8fc44c;
+    color: #332817;
+    font-size: larger;
+    text-align: center;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="#">
+    <meta name="author" content="Paulo Andreé Monroy Cotrina">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Cuzco</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Machu Pichu, Perú" width="390" height="auto">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+
+            <div class="row">
+                <span class="etiqueta">Area:</span>
+                <span class="valor">116.22 km²</span>
+
+                <span class="etiqueta">Population:</span>
+                <span class="valor">428,450</span>
+            
+                <span class="etiqueta">Capital:</span>
+                <span class="valor">Cusco</span>
+           
+                <span class="etiqueta">Lenguages:</span>
+                <span class="valor">Español, Quechua</span>
+           
+                <span class="etiqueta">Currency:</span>
+                <span class="valor">Sol peruano (PEN).</span>
+            
+                <span class="etiqueta">Time Zone:</span>
+                <span class="valor">UTC-5</span>
+            
+                <span class="etiqueta">Calling Code:</span>
+                <span class="valor">+51 (Perú)</span>
+            
+                <span class="etiqueta">Internet TLD:</span>
+                <span class="valor">.pe</span>
+            </div>
+        </section>
+        
+        <section class="weather">
+            <h3>Weather</h3>
+
+            <div class="logo">
+                <picture>
+                    <source srcset="images/weather.svg" media="(min-width: 1000px)">
+                    <img src="images/icono_clima.svg" alt="weather icon" width="180" height="200">
+                </picture>
+            </div>
+
+            <div class="row">
+                <span class="etiqueta">Temperature:</span>
+                <span class="valor">6.5°C</span>
+
+                <span class="etiqueta">Conditions:</span>
+                <span class="valor">Mostly cloudy</span>
+                
+                <span class="etiqueta">Wind:</span>
+                <span class="valor">13 km/h</span>
+            
+                <span class="etiqueta">Wind Chill:</span>
+                <span class="valor">9°C</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ⚪🔴 Paulo Andreé Monroy Cotrina 🔴⚪ Lima, Perú</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
