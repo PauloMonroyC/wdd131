@@ -1,3 +1,9 @@
+:root {
+    --background-color: #8fc44c;
+    --secondary-color: #6aac52;
+    --text-color: #332817;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,25 +14,21 @@
 
 h1 {
     display: block;
-    background: #8fc44c;
-    color: #332817;
-    border-bottom: 8px solid #6aac52;
+    background: var(--background-color);
+    color: var(--text-color);
+    border-bottom: 8px solid var(--secondary-color);
     text-align: center;
     font-weight: 500;
     font-size: 40px;
     padding: 10px;
 }
 
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-bottom: 15px;
-}
-
 .hero img {
-    border-bottom: 5px solid #6aac52;
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid var(--secondary-color);
 }
 
 .data h2 {
@@ -41,18 +43,19 @@ h1 {
     align-items: center;
     align-content: center;
     margin: 10px;
-    padding-bottom: 15px;
+    padding: 15px 0;
     border-bottom: 0.1px solid #b8e4a8;
     font-size: 20px;
 }
 
 .row {
     display: grid;
-    grid-template-columns: 140px 160px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 100%;
     column-gap: 8px;
     row-gap: 10px;
-    justify-content: center;
-    padding-left: 60px;
+    padding: 0 16px;
 }
 
 .etiqueta {
@@ -60,7 +63,7 @@ h1 {
     font-weight: 550;
 }
 
-.valor {
+.value {
     text-align: left;
 }
 
@@ -71,11 +74,9 @@ h1 {
     padding-top: 30px;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;  
+.logo img {
+    width: 120px;  
+    height: auto;
 }
 
 .weather {
@@ -92,8 +93,93 @@ footer {
     margin-top: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: #8fc44c;
-    color: #332817;
+    background: var(--background-color);
+    color: var(--text-color);
     font-size: larger;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    main {
+        position: relative;
+    }
+
+    .hero {
+        text-align: left;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 950px;
+        max-width: none;
+        max-height: none;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+    }
+
+    .data, .weather {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: max-content;
+        max-width: 90%;
+        margin: 0;
+        padding: 24px;
+        background: #fff;
+        border: 2px solid #1a1a1a;
+        box-shadow: 0 6px 16px #00000033;
+        font-size: 20px;
+    }
+
+    .data h2, .weather h3 {
+        text-align: left;
+        font-size: 24px;
+        padding-bottom: 12px;
+        padding-top: 0;
+    }
+
+    .data {
+        top: 50px;
+        left: 50px;
+    }
+
+    .weather {
+        bottom: 50px;
+        right: 50px;
+    }
+
+    .row {
+        grid-template-columns: auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: start;
+        width: auto;
+        max-width: none;
+        padding: 0;
+    }
+
+    .tag {
+        text-align: left;
+        font-weight: 550;
+    }
+
+    .value {
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .weather .logo {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        width: auto;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
 }
