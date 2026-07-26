@@ -12,6 +12,15 @@
     font-weight: 100;
 }
 
+header h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--secondary-color);
+    margin: 8px auto 0;
+}
+
 h1 {
     display: block;
     background: var(--background-color);
@@ -177,16 +186,25 @@ footer {
     }
 
     .weather .logo {
+        display: none;
+    }
+
+    .weather h3 {
+        position: relative;
+        padding-right: 45px;
+    }
+
+    .weather h3::after {
+        content: "";
         position: absolute;
-        top: 15px;
-        right: 25px;
-        width: auto;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background-image: url('../images/icono_clima.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
-
-    .logo img {
-        width: 60px;
-        height: 95px;
-    }
-
-
+        
 }
