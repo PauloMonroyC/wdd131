@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Gabarito";
+    font-family: "Gabarito";
     font-weight: 100;
 }
 
@@ -19,7 +19,7 @@ h1 {
     border-bottom: 8px solid var(--secondary-color);
     text-align: center;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 50px;
     padding: 10px;
 }
 
@@ -75,7 +75,7 @@ h1 {
 }
 
 .logo img {
-    width: 120px;  
+    width: 120px;
     height: auto;
 }
 
@@ -90,7 +90,6 @@ h1 {
 }
 
 footer {
-    margin-top: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background: var(--background-color);
@@ -119,7 +118,8 @@ footer {
         display: block;
     }
 
-    .data, .weather {
+    .data,
+    .weather {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -129,16 +129,21 @@ footer {
         margin: 0;
         padding: 24px;
         background: #fff;
-        border: 2px solid #1a1a1a;
         box-shadow: 0 6px 16px #00000033;
         font-size: 20px;
     }
 
-    .data h2, .weather h3 {
+    .data h2,
+    .weather h3 {
+        display:block;
+        width: 100%;
+        background-color: var(--background-color);
+        color: var(--text-color);
         text-align: left;
-        font-size: 24px;
-        padding-bottom: 12px;
-        padding-top: 0;
+        font-size: 26px;
+        margin: 10px;
+        margin-left: 0;
+        padding: 15px 32px;
     }
 
     .data {
@@ -174,12 +179,14 @@ footer {
     .weather .logo {
         position: absolute;
         top: 15px;
-        right: 20px;
+        right: 25px;
         width: auto;
     }
 
     .logo img {
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 95px;
     }
+
+
 }
