@@ -28,8 +28,8 @@ header {
 }
 
 img {
-    width: 150;
-    height: auto;
+    width: 300px;
+    height: 200px;
 }
 
 header h1 {
@@ -275,7 +275,7 @@ main {
 
 section {
     display: grid;
-    grid-template-columns: 150;
+    grid-template-columns: 1fr;
     margin: 2rem;
     padding: 2rem;
     border-radius: 20px;
@@ -288,6 +288,17 @@ section {
 
 .wireframes {
     text-align: center;
+    padding: 1.5rem;
+}
+
+.wireframes img:first-of-type {
+    width: 400px;
+    height: 600px;
+}
+
+.wireframes img:last-of-type {
+    width: 700px;
+    height: 550px;
     padding: 1.5rem;
 }
 
